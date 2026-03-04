@@ -1,0 +1,16 @@
+{
+    "name": "Further Math Assign 2",
+    "version": 2,
+    "builds": [
+        {
+            "src": "./main.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(.*)",
+            "dest": "/"
+        }
+    ]
+}
