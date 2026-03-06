@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FMath A2 - Flask</title>
+    <title>FMath Assignment 2</title>
 
     <!-- MathJax for LaTeX Rendering -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<h1>FMath A2 - Flask Version</h1>
+<h1>FMath Assignment 2 - Answers</h1>
 
 <form method="post">
     <label>Select Dataset:</label>
@@ -30,7 +30,7 @@
 
 <div class="section">
     <h2>Question 1</h2>
-    <p>{{ mat2latex(X) | safe }} {{ mat2latex(Y) | safe }} {{ mat2latex(Z) | safe }}</p>
+    <p>X = {{ mat2latex(X) | safe }} Y = {{ mat2latex(Y) | safe }} Z = {{ mat2latex(Z) | safe }}</p>
 
     {% for k,v in q1_latex.items() %}
         <p><b>{{k}}:</b> {{ v | safe }}</p>
