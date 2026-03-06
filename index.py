@@ -9,11 +9,7 @@ import io, base64
 app = Flask(__name__)
 
 def mat2latex(mat):
-    return r'
-
-\[\begin{bmatrix} ' + ' \\\\ '.join([' & '.join(map(str, row)) for row in mat]) + r' \end{bmatrix}\]
-
-'
+    return r'\[\begin{bmatrix} ' + ' \\\\ '.join([' & '.join(map(str, row)) for row in mat]) + r' \end{bmatrix}\]'
 
 def fig_to_base64(fig):
     buf = io.BytesIO()
