@@ -153,8 +153,8 @@ def index():
     Zr, Ztheta = cmath.polar(q9)
 
     Vr, Vtheta = 12, 0
-    r_vz = Vr / Zr
-    deg_vz = Vtheta - Ztheta*180/np.pi
+    r_vz = round(Vr / Zr,2)
+    deg_vz = round(Vtheta - Ztheta*180/np.pi,2)
 
     return render_template(
         "index.html",
