@@ -17,11 +17,30 @@
 </head>
 <body>
 
-<h1>FMath Assignment 2 - Answers</h1>
+<h1>Further Math Assignment 2 - Answers</h1>
 
-<form method="post">
-    <label>Select Dataset:</label>
-    <select name="data" onchange="this.form.submit()">
+<form method="post" style="
+    background: #263B6A;#f8f9fa;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    border: 1px solid #e0e0e0;
+    font-family: sans-serif;
+">
+    <label style="font-weight: 600; color: #EEFABD;#4E8D9C;">Select Dataset:</label>
+    <select name="data" onchange="this.form.submit()" style="
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        background-color: white;
+        cursor: pointer;
+        font-size: 14px;
+        outline: none;
+    ">
         {% for i in range(1, max_len+1) %}
             <option value="{{i}}" {% if i == idx %}selected{% endif %}>{{i}}</option>
         {% endfor %}
