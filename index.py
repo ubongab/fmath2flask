@@ -165,7 +165,7 @@ def index():
         q1_latex=q1_latex,
         q2=q2,
         q3_matrix=q3_matrix, q3_rhs=q3_rhs, q3_x=q3_x, q3_y=q3_y,
-        q4_matrix=q4_matrix, q4_rhs=q4_rhs, a4=a4, b4=b4v, c4=c4,
+        q4_matrix=q4_matrix, q4_rhs=q4_rhs, a4=round(a4,2), b4=round(b4v,2), c4=round(c4,2),
         Xv=Xv, Yv=Yv, q5a=q5a, q5b=q5b,
         Xr=Xr, Xtheta=Xtheta, Yr=Yr, Ytheta=Ytheta,
         Xr_i=Xr_i, Xtheta_i=Xtheta_i, Yr_i=Yr_i, Ytheta_i=Ytheta_i,
